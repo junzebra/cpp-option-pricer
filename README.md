@@ -28,14 +28,6 @@ These values match the analytical Black-Scholes benchmark for European options.
 
 ---
 
-## 🛠️ Build Instructions
-
-From the project root:
-```bash
-g++ src/main.cpp src/math/Normal.cpp src/pricers/BlackScholes.cpp -o pricer -std=c++17
-./pricer
-
-If using VS Code, press Ctrl + Shift + B to build with the predefined task.
 🚀 Future Improvements
 
     Compute Greeks (Δ Gamma Vega Theta Rho)
@@ -46,3 +38,14 @@ If using VS Code, press Ctrl + Shift + B to build with the predefined task.
 
     Unit-test each module
 # cpp-option-pricer
+
+
+## 🛠️ Build Instructions
+
+From the project root:
+```bash
+g++ src/main.cpp src/math/Normal.cpp src/pricers/BlackScholes.cpp -o pricer -std=c++17
+./pricer
+
+If using VS Code, press Ctrl + Shift + B to build with the predefined task.
+
