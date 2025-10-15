@@ -37,7 +37,6 @@ These values match the analytical Black-Scholes benchmark for European options.
     Add CLI or CSV input
 
     Unit-test each module
-# cpp-option-pricer
 
 
 ## 🛠️ Build Instructions
