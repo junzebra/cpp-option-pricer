@@ -4,25 +4,6 @@ This project implements a **modular C++ option pricing library** based on the **
 
 ---
 
-## 📂 Project Structure
-
-OptionPricer/
-├── src/
-│ ├── main.cpp # Test driver (runs the pricing engine)
-│ ├── math/
-│ │ ├── Normal.cpp # Normal distribution PDF and CDF
-│ │ └── Normal.hpp
-│ ├── models/
-│ │ ├── Market.hpp # Market data structure (spot, rates, volatility)
-│ │ └── Options.hpp # Option contract details (type, strike, maturity)
-│ └── pricers/
-│ ├── BlackScholes.cpp # Black-Scholes pricing implementation
-│ └── BlackScholes.hpp
-└── README.md
-
-
----
-
 
 ## 💻 Example Run
 
