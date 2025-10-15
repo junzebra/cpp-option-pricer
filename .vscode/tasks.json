@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Option Pricer",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/main.cpp",
+                "src/math/Normal.cpp",
+                "src/pricers/BlackScholes.cpp",
+                "-o",
+                "pricer",
+                "-std=c++17"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Builds all C++ source files for the Option Pricer project."
+        }
+    ]
+}
