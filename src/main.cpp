@@ -1,6 +1,7 @@
 #include<iostream>
 #include "math/Normal.hpp"
 #include "pricers/BlackScholes.hpp"
+#include "pricers/Montecarlo.hpp"
 
 int main() {
     models::Market mkt;
@@ -20,11 +21,14 @@ int main() {
         putOpt.type = models::OptionType::Put;
     
 
-    double call_price = pricers::black_scholes_price(mkt, callOpt);
-    double put_price = pricers::black_scholes_price(mkt, putOpt);
+    double bs_call_price = pricers::black_scholes_price(mkt, callOpt);
+    double bs_put_price = pricers::black_scholes_price(mkt, putOpt);
+    double mc_call_price = pricers::montecarlo_price(mkt, callOpt);
+    double mc_put_price = pricers::montecarlo_price(mkt,putOpt);
 
-    std::cout << "Call price : " << call_price << "\nPut price : " << put_price << std::endl;
-
+    std::cout <<"Black Scholes :\n" << "Call price : " << bs_call_price << "\nPut price : " << bs_put_price << std::endl;
+    std::cout <<"Montecarlo :\n" << "Call price : " << mc_call_price << "\nPut price : " << mc_put_price << std::endl;
+    
     
 
 

@@ -9,6 +9,7 @@
                 "src/main.cpp",
                 "src/math/Normal.cpp",
                 "src/pricers/BlackScholes.cpp",
+                "src/pricers/Montecarlo.cpp",
                 "-o",
                 "pricer",
                 "-std=c++17"

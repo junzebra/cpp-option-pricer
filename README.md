@@ -32,7 +32,6 @@ These values match the analytical Black-Scholes benchmark for European options.
 
     Compute Greeks (Δ Gamma Vega Theta Rho)
 
-    Implement Monte Carlo and Binomial Tree pricing
 
     Add CLI or CSV input
 
